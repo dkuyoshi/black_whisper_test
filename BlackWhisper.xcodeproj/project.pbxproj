@@ -17,8 +17,8 @@
 		5B7CB6AF25ABE9EE00D5488D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B7CB6AD25ABE9EE00D5488D /* Main.storyboard */; };
 		5B7CB6B125ABE9F000D5488D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B7CB6B025ABE9F000D5488D /* Assets.xcassets */; };
 		5B7CB6B425ABE9F000D5488D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B7CB6B225ABE9F000D5488D /* LaunchScreen.storyboard */; };
-		5B7CB6BF25ABE9F000D5488D /* TestApp003Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CB6BE25ABE9F000D5488D /* TestApp003Tests.swift */; };
-		5B7CB6CA25ABE9F000D5488D /* TestApp003UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CB6C925ABE9F000D5488D /* TestApp003UITests.swift */; };
+		5B7CB6BF25ABE9F000D5488D /* BlackWhisperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CB6BE25ABE9F000D5488D /* BlackWhisperTests.swift */; };
+		5B7CB6CA25ABE9F000D5488D /* BlackWhisperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CB6C925ABE9F000D5488D /* BlackWhisperUITests.swift */; };
 		5B7CB6D825ABEB5E00D5488D /* TitleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CB6D725ABEB5E00D5488D /* TitleScene.swift */; };
 		5B7CB6DB25AC024F00D5488D /* moai.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B7CB6DA25AC024E00D5488D /* moai.png */; };
 		5B7CB6DD25AC0E1C00D5488D /* ghost.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B7CB6DC25AC0E1C00D5488D /* ghost.png */; };
@@ -47,7 +47,7 @@
 		5B393B8225AC71BA006D3F68 /* TitleScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TitleScene.sks; sourceTree = "<group>"; };
 		5B393B8425AC74A0006D3F68 /* GameOverScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOverScene.sks; sourceTree = "<group>"; };
 		5B393B8625AC763D006D3F68 /* devildoll_bk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = devildoll_bk.png; path = "../../フリー素材/a001-030/devildoll_bk.png"; sourceTree = "<group>"; };
-		5B7CB6A025ABE9EE00D5488D /* TestApp003.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp003.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B7CB6A025ABE9EE00D5488D /* BlackWhisper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackWhisper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B7CB6A325ABE9EE00D5488D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B7CB6A525ABE9EE00D5488D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		5B7CB6A925ABE9EE00D5488D /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -56,11 +56,11 @@
 		5B7CB6B025ABE9F000D5488D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B7CB6B325ABE9F000D5488D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B7CB6B525ABE9F000D5488D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B7CB6BA25ABE9F000D5488D /* TestApp003Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestApp003Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B7CB6BE25ABE9F000D5488D /* TestApp003Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApp003Tests.swift; sourceTree = "<group>"; };
+		5B7CB6BA25ABE9F000D5488D /* BlackWhisperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlackWhisperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B7CB6BE25ABE9F000D5488D /* BlackWhisperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackWhisperTests.swift; sourceTree = "<group>"; };
 		5B7CB6C025ABE9F000D5488D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B7CB6C525ABE9F000D5488D /* TestApp003UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestApp003UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B7CB6C925ABE9F000D5488D /* TestApp003UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApp003UITests.swift; sourceTree = "<group>"; };
+		5B7CB6C525ABE9F000D5488D /* BlackWhisperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlackWhisperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B7CB6C925ABE9F000D5488D /* BlackWhisperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackWhisperUITests.swift; sourceTree = "<group>"; };
 		5B7CB6CB25ABE9F000D5488D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B7CB6D725ABEB5E00D5488D /* TitleScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleScene.swift; sourceTree = "<group>"; };
 		5B7CB6DA25AC024E00D5488D /* moai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moai.png; sourceTree = "<group>"; };
@@ -98,9 +98,9 @@
 			isa = PBXGroup;
 			children = (
 				5B7CB6D925AC00C100D5488D /* Resourses */,
-				5B7CB6A225ABE9EE00D5488D /* TestApp003 */,
-				5B7CB6BD25ABE9F000D5488D /* TestApp003Tests */,
-				5B7CB6C825ABE9F000D5488D /* TestApp003UITests */,
+				5B7CB6A225ABE9EE00D5488D /* BlackWhisper */,
+				5B7CB6BD25ABE9F000D5488D /* BlackWhisperTests */,
+				5B7CB6C825ABE9F000D5488D /* BlackWhisperUITests */,
 				5B7CB6A125ABE9EE00D5488D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,14 +108,14 @@
 		5B7CB6A125ABE9EE00D5488D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5B7CB6A025ABE9EE00D5488D /* TestApp003.app */,
-				5B7CB6BA25ABE9F000D5488D /* TestApp003Tests.xctest */,
-				5B7CB6C525ABE9F000D5488D /* TestApp003UITests.xctest */,
+				5B7CB6A025ABE9EE00D5488D /* BlackWhisper.app */,
+				5B7CB6BA25ABE9F000D5488D /* BlackWhisperTests.xctest */,
+				5B7CB6C525ABE9F000D5488D /* BlackWhisperUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5B7CB6A225ABE9EE00D5488D /* TestApp003 */ = {
+		5B7CB6A225ABE9EE00D5488D /* BlackWhisper */ = {
 			isa = PBXGroup;
 			children = (
 				5B7CB6A325ABE9EE00D5488D /* AppDelegate.swift */,
@@ -131,25 +131,25 @@
 				5B7CB6B225ABE9F000D5488D /* LaunchScreen.storyboard */,
 				5B7CB6B525ABE9F000D5488D /* Info.plist */,
 			);
-			path = TestApp003;
+			path = BlackWhisper;
 			sourceTree = "<group>";
 		};
-		5B7CB6BD25ABE9F000D5488D /* TestApp003Tests */ = {
+		5B7CB6BD25ABE9F000D5488D /* BlackWhisperTests */ = {
 			isa = PBXGroup;
 			children = (
-				5B7CB6BE25ABE9F000D5488D /* TestApp003Tests.swift */,
+				5B7CB6BE25ABE9F000D5488D /* BlackWhisperTests.swift */,
 				5B7CB6C025ABE9F000D5488D /* Info.plist */,
 			);
-			path = TestApp003Tests;
+			path = BlackWhisperTests;
 			sourceTree = "<group>";
 		};
-		5B7CB6C825ABE9F000D5488D /* TestApp003UITests */ = {
+		5B7CB6C825ABE9F000D5488D /* BlackWhisperUITests */ = {
 			isa = PBXGroup;
 			children = (
-				5B7CB6C925ABE9F000D5488D /* TestApp003UITests.swift */,
+				5B7CB6C925ABE9F000D5488D /* BlackWhisperUITests.swift */,
 				5B7CB6CB25ABE9F000D5488D /* Info.plist */,
 			);
-			path = TestApp003UITests;
+			path = BlackWhisperUITests;
 			sourceTree = "<group>";
 		};
 		5B7CB6D925AC00C100D5488D /* Resourses */ = {
@@ -166,9 +166,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5B7CB69F25ABE9EE00D5488D /* TestApp003 */ = {
+		5B7CB69F25ABE9EE00D5488D /* BlackWhisper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5B7CB6CE25ABE9F000D5488D /* Build configuration list for PBXNativeTarget "TestApp003" */;
+			buildConfigurationList = 5B7CB6CE25ABE9F000D5488D /* Build configuration list for PBXNativeTarget "BlackWhisper" */;
 			buildPhases = (
 				5B7CB69C25ABE9EE00D5488D /* Sources */,
 				5B7CB69D25ABE9EE00D5488D /* Frameworks */,
@@ -178,14 +178,14 @@
 			);
 			dependencies = (
 			);
-			name = TestApp003;
+			name = BlackWhisper;
 			productName = TestApp003;
-			productReference = 5B7CB6A025ABE9EE00D5488D /* TestApp003.app */;
+			productReference = 5B7CB6A025ABE9EE00D5488D /* BlackWhisper.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5B7CB6B925ABE9F000D5488D /* TestApp003Tests */ = {
+		5B7CB6B925ABE9F000D5488D /* BlackWhisperTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5B7CB6D125ABE9F000D5488D /* Build configuration list for PBXNativeTarget "TestApp003Tests" */;
+			buildConfigurationList = 5B7CB6D125ABE9F000D5488D /* Build configuration list for PBXNativeTarget "BlackWhisperTests" */;
 			buildPhases = (
 				5B7CB6B625ABE9F000D5488D /* Sources */,
 				5B7CB6B725ABE9F000D5488D /* Frameworks */,
@@ -196,14 +196,14 @@
 			dependencies = (
 				5B7CB6BC25ABE9F000D5488D /* PBXTargetDependency */,
 			);
-			name = TestApp003Tests;
+			name = BlackWhisperTests;
 			productName = TestApp003Tests;
-			productReference = 5B7CB6BA25ABE9F000D5488D /* TestApp003Tests.xctest */;
+			productReference = 5B7CB6BA25ABE9F000D5488D /* BlackWhisperTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5B7CB6C425ABE9F000D5488D /* TestApp003UITests */ = {
+		5B7CB6C425ABE9F000D5488D /* BlackWhisperUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5B7CB6D425ABE9F000D5488D /* Build configuration list for PBXNativeTarget "TestApp003UITests" */;
+			buildConfigurationList = 5B7CB6D425ABE9F000D5488D /* Build configuration list for PBXNativeTarget "BlackWhisperUITests" */;
 			buildPhases = (
 				5B7CB6C125ABE9F000D5488D /* Sources */,
 				5B7CB6C225ABE9F000D5488D /* Frameworks */,
@@ -214,9 +214,9 @@
 			dependencies = (
 				5B7CB6C725ABE9F000D5488D /* PBXTargetDependency */,
 			);
-			name = TestApp003UITests;
+			name = BlackWhisperUITests;
 			productName = TestApp003UITests;
-			productReference = 5B7CB6C525ABE9F000D5488D /* TestApp003UITests.xctest */;
+			productReference = 5B7CB6C525ABE9F000D5488D /* BlackWhisperUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -242,7 +242,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5B7CB69B25ABE9EE00D5488D /* Build configuration list for PBXProject "TestApp003" */;
+			buildConfigurationList = 5B7CB69B25ABE9EE00D5488D /* Build configuration list for PBXProject "BlackWhisper" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -255,9 +255,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5B7CB69F25ABE9EE00D5488D /* TestApp003 */,
-				5B7CB6B925ABE9F000D5488D /* TestApp003Tests */,
-				5B7CB6C425ABE9F000D5488D /* TestApp003UITests */,
+				5B7CB69F25ABE9EE00D5488D /* BlackWhisper */,
+				5B7CB6B925ABE9F000D5488D /* BlackWhisperTests */,
+				5B7CB6C425ABE9F000D5488D /* BlackWhisperUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -313,7 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B7CB6BF25ABE9F000D5488D /* TestApp003Tests.swift in Sources */,
+				5B7CB6BF25ABE9F000D5488D /* BlackWhisperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B7CB6CA25ABE9F000D5488D /* TestApp003UITests.swift in Sources */,
+				5B7CB6CA25ABE9F000D5488D /* BlackWhisperUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,12 +330,12 @@
 /* Begin PBXTargetDependency section */
 		5B7CB6BC25ABE9F000D5488D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5B7CB69F25ABE9EE00D5488D /* TestApp003 */;
+			target = 5B7CB69F25ABE9EE00D5488D /* BlackWhisper */;
 			targetProxy = 5B7CB6BB25ABE9F000D5488D /* PBXContainerItemProxy */;
 		};
 		5B7CB6C725ABE9F000D5488D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5B7CB69F25ABE9EE00D5488D /* TestApp003 */;
+			target = 5B7CB69F25ABE9EE00D5488D /* BlackWhisper */;
 			targetProxy = 5B7CB6C625ABE9F000D5488D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -480,13 +480,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MUTVVS6U4N;
-				INFOPLIST_FILE = TestApp003/Info.plist;
+				INFOPLIST_FILE = BlackWhisper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Donkey.TestApp003;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = Donkey.BlackWhisper;
+				PRODUCT_NAME = BlackWhisper;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -498,13 +498,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MUTVVS6U4N;
-				INFOPLIST_FILE = TestApp003/Info.plist;
+				INFOPLIST_FILE = BlackWhisper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Donkey.TestApp003;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = Donkey.BlackWhisper;
+				PRODUCT_NAME = BlackWhisper;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -528,7 +528,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestApp003.app/TestApp003";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlackWhisper.app/BlackWhisper";
 			};
 			name = Debug;
 		};
@@ -550,7 +550,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestApp003.app/TestApp003";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlackWhisper.app/BlackWhisper";
 			};
 			name = Release;
 		};
@@ -597,7 +597,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5B7CB69B25ABE9EE00D5488D /* Build configuration list for PBXProject "TestApp003" */ = {
+		5B7CB69B25ABE9EE00D5488D /* Build configuration list for PBXProject "BlackWhisper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5B7CB6CC25ABE9F000D5488D /* Debug */,
@@ -606,7 +606,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5B7CB6CE25ABE9F000D5488D /* Build configuration list for PBXNativeTarget "TestApp003" */ = {
+		5B7CB6CE25ABE9F000D5488D /* Build configuration list for PBXNativeTarget "BlackWhisper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5B7CB6CF25ABE9F000D5488D /* Debug */,
@@ -615,7 +615,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5B7CB6D125ABE9F000D5488D /* Build configuration list for PBXNativeTarget "TestApp003Tests" */ = {
+		5B7CB6D125ABE9F000D5488D /* Build configuration list for PBXNativeTarget "BlackWhisperTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5B7CB6D225ABE9F000D5488D /* Debug */,
@@ -624,7 +624,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5B7CB6D425ABE9F000D5488D /* Build configuration list for PBXNativeTarget "TestApp003UITests" */ = {
+		5B7CB6D425ABE9F000D5488D /* Build configuration list for PBXNativeTarget "BlackWhisperUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5B7CB6D525ABE9F000D5488D /* Debug */,
