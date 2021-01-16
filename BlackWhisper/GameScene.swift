@@ -12,22 +12,22 @@ import GameplayKit
 class GameScene: SKScene {
     var mainCaraNode = SKSpriteNode(imageNamed: "moai.png")
     let gameOverLabel = SKLabelNode()
+    let audio = JKAudioPlayer.sharedInstance()
     
     override func didMove(to view: SKView) {
-        print("[debug] didMove - called.")
+        //start back music
+        self.audio.playMusic("game1.mp3")
+        
+        // mainchara
         self.mainCaraNode.alpha = 1
         self.mainCaraNode.position = CGPoint(x: 0, y: view.frame.height / -2 + 100)
         self.addChild(self.mainCaraNode)
         
+        // Background
         self.backgroundColor = UIColor.black
-        self.addObject()
         
-        self.gameOverLabel.text = "Game Over"
-        self.gameOverLabel.fontSize = 100
-        self.gameOverLabel.fontName = "Verdana-bold"
-        self.gameOverLabel.fontColor = UIColor.red
-        self.gameOverLabel.alpha = 0
-        self.addChild(gameOverLabel)
+        // 敵キャラの出現
+        self.addObject()
         
     }
     
@@ -46,7 +46,7 @@ class GameScene: SKScene {
         
         //game over check
         if self.isGameOver(){
-            // self.gameOverLabel.alpha = 1
+            self.audio.stopMusic()
             let nextScene = GameOverScene(fileNamed: "GameOverScene")
             nextScene?.scaleMode = .aspectFill
             self.view!.presentScene(nextScene)
@@ -77,7 +77,7 @@ class GameScene: SKScene {
         guard let node = self.childNode(withName: "ghost") else {return}
         let nodes = self.nodes(at: node.position)
         if nodes.count > 1 {
-            // self.gameOverLabel.alpha = 1
+            self.audio.stopMusic()
             let nextScene = GameOverScene(fileNamed: "GameOverScene")
             nextScene?.scaleMode = .aspectFill
             self.view!.presentScene(nextScene)
@@ -86,11 +86,12 @@ class GameScene: SKScene {
     
     func addObject(){
         let ghost = SKSpriteNode(imageNamed: "ghost.png")
-        let yPos = CGFloat(Int.random(in: 0 ..< Int(self.view!.frame.height))) - self.view!.frame.height / 2
+        let yPosRandom = CGFloat(Int.random(in: 0 ..< Int(self.view!.frame.height))) - self.view!.frame.height / 2
+        let yPos = self.mainCaraNode.position.y
         ghost.name  = "ghost"
         ghost.position = CGPoint(x: self.view!.frame.width * -1, y: yPos)
         self.addChild(ghost)
-        let moveAction = SKAction.moveTo(x: self.view!.frame.width, duration: 0.5)
+        let moveAction = SKAction.moveTo(x: self.view!.frame.width, duration: 0.6)
         ghost.run(
             SKAction.sequence([moveAction, SKAction.removeFromParent()])
         )
@@ -98,7 +99,8 @@ class GameScene: SKScene {
             self.addObject()
         }
         
-        let newObjectAction = SKAction.sequence([SKAction.wait(forDuration: 0.5), objectAttack])
+        let randomFloatDuration = Float.random(in: 0.5..<1.5)
+        let newObjectAction = SKAction.sequence([SKAction.wait(forDuration: TimeInterval(randomFloatDuration)), objectAttack])
         self.run(newObjectAction)
     }
 }
