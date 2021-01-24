@@ -16,8 +16,8 @@ class GameScene: SKScene {
     let audio = JKAudioPlayer.sharedInstance()
     let hitSound = SKAction.playSoundFileNamed("hit.mp3", waitForCompletion: true)
     
-    var hp: Int = 1000
-    var countDown: Int = 499
+    var hp: Int = 2000
+    var countDown: Int = 999
     
     var hpLabel = SKLabelNode(fontNamed: "AmericanTypewriter-Bold")
     var countDownLabel = SKLabelNode(fontNamed: "AmericanTypewriter-Bold")
@@ -51,10 +51,12 @@ class GameScene: SKScene {
         self.countDownLabel.fontColor = UIColor.white
         self.countDownLabel.position = CGPoint(x: 200, y: 500)
         self.addChild(self.countDownLabel)
-
+    
         // おばけ出現
-        self.addObject()
-        
+        self.addGhost()
+        self.addWhiteGhost()
+        // 失格ライン
+        self.addSord()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -72,6 +74,7 @@ class GameScene: SKScene {
         //game over check
         if self.isTouchGameOver(){
             self.audio.stopMusic()
+            self.backgroundColor = UIColor.white
             let nextScene = GameOverScene(fileNamed: "GameOverScene")
             nextScene?.scaleMode = .aspectFill
             self.view!.presentScene(nextScene)
@@ -140,13 +143,27 @@ class GameScene: SKScene {
         let nodes = self.nodes(at: node.position)
         if nodes.count > 1{
             self.run(self.hitSound)
-            self.hp -= 100
+            self.hp -= 50
+            
+            // hit 減点表示
+            let damageLabel = SKLabelNode(fontNamed: "Verdana-bold")
+            damageLabel.text = "-50"
+            damageLabel.fontColor = UIColor.red
+            damageLabel.fontSize = 20
+            damageLabel.position = CGPoint(x: self.mainCaraNode.position.x - 50, y: self.mainCaraNode.position.y)
+            damageLabel.zPosition = 10
+            self.addChild(damageLabel)
+            let upPos = CGPoint(x: self.mainCaraNode.position.x - 50, y: self.mainCaraNode.position.y + 100)
+            let upAction = SKAction.move(to: upPos, duration: 0.3)
+            damageLabel.run(SKAction.sequence([upAction, SKAction.removeFromParent()]))
+            
+            // 当たったことを視覚的にわかりやすく
             self.mainCaraNode.run(SKAction.repeat(SKAction.sequence([fadeoutAction, fadeinAction]), count: 2))
             self.hpLabel.text = "HP: " + String(self.hp)
         }
     }
     
-    func addObject(){
+    func addGhost(){
         let ghost = SKSpriteNode(imageNamed: "ghost.png")
         let yPosRandom = CGFloat(Int.random(in: 0 ..< Int(self.view!.frame.height))) - self.view!.frame.height / 2
         let yPos = self.mainCaraNode.position.y
@@ -160,16 +177,63 @@ class GameScene: SKScene {
         
         ghost.position = CGPoint(x: self.view!.frame.width * CGFloat(constLeft), y: yPos)
         self.addChild(ghost)
-        let moveAction = SKAction.moveTo(x: self.view!.frame.width * (-CGFloat(constLeft)), duration: 0.6)
+        let moveAction = SKAction.moveTo(x: self.view!.frame.width * (-CGFloat(constLeft)), duration: 0.8)
         ghost.run(
             SKAction.sequence([moveAction, SKAction.removeFromParent()])
         )
         let objectAttack = SKAction.run{
-            self.addObject()
+            self.addGhost()
         }
         
         let randomFloatDuration = Float.random(in: 0.5..<1.5)
         let newObjectAction = SKAction.sequence([SKAction.wait(forDuration: TimeInterval(randomFloatDuration)), objectAttack])
+        self.run(newObjectAction)
+    }
+    
+    func addWhiteGhost(){
+        let ghost = SKSpriteNode(imageNamed: "ghost_white.png")
+        let yPos = self.mainCaraNode.position.y
+        ghost.name  = "white ghost"
+        ghost.size = CGSize(width: ghost.size.width*2, height: ghost.size.height*2)
+        let fromLeft = Bool.random()
+        var constLeft: Int = -1
+        if !fromLeft {
+            constLeft = 1
+        }
+        
+        ghost.position = CGPoint(x: self.view!.frame.width * CGFloat(constLeft), y: yPos)
+        self.addChild(ghost)
+        var waitAction = SKAction.wait(forDuration: 2.5)
+        let moveAction = SKAction.moveTo(x: self.view!.frame.width * (-CGFloat(constLeft)), duration: 0.8)
+        ghost.run(
+            SKAction.sequence([waitAction, moveAction, SKAction.removeFromParent()])
+        )
+        let objectAttack = SKAction.run{
+            self.addWhiteGhost()
+        }
+        
+        let randomFloatDuration = Float.random(in: 8..<15)
+        let newObjectAction = SKAction.sequence([SKAction.wait(forDuration: TimeInterval(randomFloatDuration)), objectAttack])
+        self.run(newObjectAction)
+    }
+    
+    func addSord(){
+        let sord = SKSpriteNode(imageNamed: "katana.png")
+        let yPos = self.view!.frame.height / 2 - 120
+        sord.name  = "sord"
+        sord.size = CGSize(width: sord.size.width*1.5, height: sord.size.height*1.5)
+
+        sord.position = CGPoint(x: self.view!.frame.width * -1, y: yPos)
+        self.addChild(sord)
+        let moveAction = SKAction.moveTo(x: self.view!.frame.width , duration: 0.7)
+        sord.run(
+            SKAction.sequence([moveAction, SKAction.removeFromParent()])
+        )
+        let objectAttack = SKAction.run{
+            self.addSord()
+        }
+        
+        let newObjectAction = SKAction.sequence([SKAction.wait(forDuration: TimeInterval(0.3)), objectAttack])
         self.run(newObjectAction)
     }
 }

@@ -11,6 +11,7 @@
 		5B393B8325AC71BA006D3F68 /* TitleScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5B393B8225AC71BA006D3F68 /* TitleScene.sks */; };
 		5B393B8525AC74A0006D3F68 /* GameOverScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5B393B8425AC74A0006D3F68 /* GameOverScene.sks */; };
 		5B393B8725AC763D006D3F68 /* devildoll_bk.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B393B8625AC763D006D3F68 /* devildoll_bk.png */; };
+		5B50553725BD699500DAE680 /* katana.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B50553625BD699500DAE680 /* katana.png */; };
 		5B543E8325BD3D41003EDD73 /* hit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5B543E8225BD3D41003EDD73 /* hit.mp3 */; };
 		5B7AEBE925B908D900B4B23E /* back_title.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5B7AEBE825B908D900B4B23E /* back_title.jpg */; };
 		5B7CB6A425ABE9EE00D5488D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CB6A325ABE9EE00D5488D /* AppDelegate.swift */; };
@@ -58,6 +59,7 @@
 		5B393B8225AC71BA006D3F68 /* TitleScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TitleScene.sks; sourceTree = "<group>"; };
 		5B393B8425AC74A0006D3F68 /* GameOverScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOverScene.sks; sourceTree = "<group>"; };
 		5B393B8625AC763D006D3F68 /* devildoll_bk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = devildoll_bk.png; path = "../../フリー素材/a001-030/devildoll_bk.png"; sourceTree = "<group>"; };
+		5B50553625BD699500DAE680 /* katana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = katana.png; path = "../../フリー素材/a001-030/katana.png"; sourceTree = "<group>"; };
 		5B543E8225BD3D41003EDD73 /* hit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = hit.mp3; path = ../../../Music/Logic/Bounces/hit.mp3; sourceTree = "<group>"; };
 		5B7AEBE825B908D900B4B23E /* back_title.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = back_title.jpg; path = "../../フリー素材/back_title.jpg"; sourceTree = "<group>"; };
 		5B7CB6A025ABE9EE00D5488D /* BlackWhisper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackWhisper.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -186,6 +188,7 @@
 		5B7CB6D925AC00C100D5488D /* Resourses */ = {
 			isa = PBXGroup;
 			children = (
+				5B50553625BD699500DAE680 /* katana.png */,
 				5BA0995E25BD4EBC00295CA5 /* ghost_white.png */,
 				5B543E8225BD3D41003EDD73 /* hit.mp3 */,
 				5B25C42425B013D400CDBC6B /* game1.mp3 */,
@@ -318,6 +321,7 @@
 				5B7CB6AF25ABE9EE00D5488D /* Main.storyboard in Resources */,
 				5B7CB6DD25AC0E1C00D5488D /* ghost.png in Resources */,
 				5B7AEBE925B908D900B4B23E /* back_title.jpg in Resources */,
+				5B50553725BD699500DAE680 /* katana.png in Resources */,
 				5B7CB6DB25AC024F00D5488D /* moai.png in Resources */,
 				5B7CB6A625ABE9EE00D5488D /* GameScene.sks in Resources */,
 				5B393B8725AC763D006D3F68 /* devildoll_bk.png in Resources */,
