@@ -11,6 +11,8 @@
 		5B393B8325AC71BA006D3F68 /* TitleScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5B393B8225AC71BA006D3F68 /* TitleScene.sks */; };
 		5B393B8525AC74A0006D3F68 /* GameOverScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5B393B8425AC74A0006D3F68 /* GameOverScene.sks */; };
 		5B393B8725AC763D006D3F68 /* devildoll_bk.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B393B8625AC763D006D3F68 /* devildoll_bk.png */; };
+		5B543E8325BD3D41003EDD73 /* hit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5B543E8225BD3D41003EDD73 /* hit.mp3 */; };
+		5B7AEBE925B908D900B4B23E /* back_title.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5B7AEBE825B908D900B4B23E /* back_title.jpg */; };
 		5B7CB6A425ABE9EE00D5488D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CB6A325ABE9EE00D5488D /* AppDelegate.swift */; };
 		5B7CB6A625ABE9EE00D5488D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5B7CB6A525ABE9EE00D5488D /* GameScene.sks */; };
 		5B7CB6AA25ABE9EE00D5488D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CB6A925ABE9EE00D5488D /* GameScene.swift */; };
@@ -26,6 +28,9 @@
 		5B7CB6E125AC2F6600D5488D /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CB6E025AC2F6600D5488D /* GameOverScene.swift */; };
 		5B7CB6E525AC344D00D5488D /* tarantula.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B7CB6E425AC344D00D5488D /* tarantula.png */; };
 		5BA04B8E25AEFD530011ABD5 /* title2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5BA04B8D25AEFD530011ABD5 /* title2.mp3 */; };
+		5BA0995525BD4DFA00295CA5 /* GameClearScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5BA0995425BD4DFA00295CA5 /* GameClearScene.sks */; };
+		5BA0995A25BD4E2700295CA5 /* GameClearScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA0995925BD4E2700295CA5 /* GameClearScene.swift */; };
+		5BA0995F25BD4EBC00295CA5 /* ghost_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BA0995E25BD4EBC00295CA5 /* ghost_white.png */; };
 		5BB117FD25AD47A70015B5FD /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB117FC25AD47A70015B5FD /* Button.swift */; };
 		5BB117FF25AE840C0015B5FD /* title1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5BB117FE25AE840C0015B5FD /* title1.mp3 */; };
 		5BB1180125AE97820015B5FD /* JKAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB1180025AE97820015B5FD /* JKAudioPlayer.swift */; };
@@ -53,6 +58,8 @@
 		5B393B8225AC71BA006D3F68 /* TitleScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TitleScene.sks; sourceTree = "<group>"; };
 		5B393B8425AC74A0006D3F68 /* GameOverScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOverScene.sks; sourceTree = "<group>"; };
 		5B393B8625AC763D006D3F68 /* devildoll_bk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = devildoll_bk.png; path = "../../フリー素材/a001-030/devildoll_bk.png"; sourceTree = "<group>"; };
+		5B543E8225BD3D41003EDD73 /* hit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = hit.mp3; path = ../../../Music/Logic/Bounces/hit.mp3; sourceTree = "<group>"; };
+		5B7AEBE825B908D900B4B23E /* back_title.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = back_title.jpg; path = "../../フリー素材/back_title.jpg"; sourceTree = "<group>"; };
 		5B7CB6A025ABE9EE00D5488D /* BlackWhisper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackWhisper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B7CB6A325ABE9EE00D5488D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B7CB6A525ABE9EE00D5488D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -74,6 +81,9 @@
 		5B7CB6E025AC2F6600D5488D /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
 		5B7CB6E425AC344D00D5488D /* tarantula.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tarantula.png; path = "../../フリー素材/a001-030/tarantula.png"; sourceTree = "<group>"; };
 		5BA04B8D25AEFD530011ABD5 /* title2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = title2.mp3; path = ../../../Music/Logic/Bounces/title2.mp3; sourceTree = "<group>"; };
+		5BA0995425BD4DFA00295CA5 /* GameClearScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameClearScene.sks; sourceTree = "<group>"; };
+		5BA0995925BD4E2700295CA5 /* GameClearScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameClearScene.swift; sourceTree = "<group>"; };
+		5BA0995E25BD4EBC00295CA5 /* ghost_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ghost_white.png; path = "../../フリー素材/a001-030/ghost_white.png"; sourceTree = "<group>"; };
 		5BB117FC25AD47A70015B5FD /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		5BB117FE25AE840C0015B5FD /* title1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = title1.mp3; path = ../../../Music/Logic/Bounces/title1.mp3; sourceTree = "<group>"; };
 		5BB1180025AE97820015B5FD /* JKAudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKAudioPlayer.swift; sourceTree = "<group>"; };
@@ -141,6 +151,8 @@
 				5B7CB6B025ABE9F000D5488D /* Assets.xcassets */,
 				5B7CB6B225ABE9F000D5488D /* LaunchScreen.storyboard */,
 				5B7CB6B525ABE9F000D5488D /* Info.plist */,
+				5BA0995425BD4DFA00295CA5 /* GameClearScene.sks */,
+				5BA0995925BD4E2700295CA5 /* GameClearScene.swift */,
 			);
 			path = BlackWhisper;
 			sourceTree = "<group>";
@@ -166,9 +178,12 @@
 		5B7CB6D925AC00C100D5488D /* Resourses */ = {
 			isa = PBXGroup;
 			children = (
+				5BA0995E25BD4EBC00295CA5 /* ghost_white.png */,
+				5B543E8225BD3D41003EDD73 /* hit.mp3 */,
 				5B25C42425B013D400CDBC6B /* game1.mp3 */,
 				5BA04B8D25AEFD530011ABD5 /* title2.mp3 */,
 				5BB117FE25AE840C0015B5FD /* title1.mp3 */,
+				5B7AEBE825B908D900B4B23E /* back_title.jpg */,
 				5B7CB6DC25AC0E1C00D5488D /* ghost.png */,
 				5B7CB6E425AC344D00D5488D /* tarantula.png */,
 				5B7CB6DA25AC024E00D5488D /* moai.png */,
@@ -290,14 +305,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BA0995525BD4DFA00295CA5 /* GameClearScene.sks in Resources */,
 				5BA04B8E25AEFD530011ABD5 /* title2.mp3 in Resources */,
 				5B7CB6AF25ABE9EE00D5488D /* Main.storyboard in Resources */,
 				5B7CB6DD25AC0E1C00D5488D /* ghost.png in Resources */,
+				5B7AEBE925B908D900B4B23E /* back_title.jpg in Resources */,
 				5B7CB6DB25AC024F00D5488D /* moai.png in Resources */,
 				5B7CB6A625ABE9EE00D5488D /* GameScene.sks in Resources */,
 				5B393B8725AC763D006D3F68 /* devildoll_bk.png in Resources */,
 				5BB117FF25AE840C0015B5FD /* title1.mp3 in Resources */,
 				5B7CB6E525AC344D00D5488D /* tarantula.png in Resources */,
+				5BA0995F25BD4EBC00295CA5 /* ghost_white.png in Resources */,
+				5B543E8325BD3D41003EDD73 /* hit.mp3 in Resources */,
 				5B393B8325AC71BA006D3F68 /* TitleScene.sks in Resources */,
 				5B7CB6B125ABE9F000D5488D /* Assets.xcassets in Resources */,
 				5B25C42525B013D500CDBC6B /* game1.mp3 in Resources */,
@@ -333,6 +352,7 @@
 				5B7CB6AC25ABE9EE00D5488D /* GameViewController.swift in Sources */,
 				5B7CB6A425ABE9EE00D5488D /* AppDelegate.swift in Sources */,
 				5B7CB6D825ABEB5E00D5488D /* TitleScene.swift in Sources */,
+				5BA0995A25BD4E2700295CA5 /* GameClearScene.swift in Sources */,
 				5BB1180125AE97820015B5FD /* JKAudioPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

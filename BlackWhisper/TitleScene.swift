@@ -17,18 +17,21 @@ class TitleScene: SKScene{
     
     let titleLabel = SKLabelNode(fontNamed: "AmericanTypewriter-Bold")
     let startLabel = SKLabelNode(fontNamed: "Verdana-bold")
-    let titleImg = SKSpriteNode(imageNamed: "tarantula.png")
+    let titleImg = SKSpriteNode(imageNamed: "devildoll_bk.png")
     let startButton = SKSpriteNode(imageNamed: "moai.png", normalMapped: true)
-    let fakeButton = SKSpriteNode(imageNamed: "devildoll_bk.png", normalMapped: true)
-    //back bgm
-    // var audioPlayer: AVAudioPlayer?
-    // var backgroundMusic = SKAudioNode()
-    // let musicPath = Bundle.main.url(forResource: "title1", withExtension: "mp3")
+    let fakeButton = SKSpriteNode(imageNamed: "tarantula.png", normalMapped: true)
     let audio = JKAudioPlayer.sharedInstance()
+    let backImg = SKSpriteNode(imageNamed: "back_title.jpg", normalMapped: true)
     
-    let blueCircle = SKShapeNode(circleOfRadius: 30)
+    let myButton = UIButton()
     
     override func didMove(to view: SKView){
+        // 背景
+        self.backImg.size = self.frame.size
+        self.backImg.position = CGPoint(x: 0, y: 0)
+        self.backImg.zPosition = -50
+        self.addChild(self.backImg)
+        
         self.backgroundColor = UIColor.black
         self.titleLabel.text = "Black Whisper of U"
         self.titleLabel.fontSize = 40
@@ -38,6 +41,10 @@ class TitleScene: SKScene{
         
         self.titleImg.position = CGPoint(x: 0, y: 0)
         addChild(self.titleImg)
+        let scaleUp = SKAction.scale(to: 10.0, duration: 0.05)
+        let scaleDown = SKAction.scale(to: 1.0, duration: 0.05)
+        var waitAction = SKAction.wait(forDuration: 2.5)
+        self.titleImg.run(SKAction.repeatForever(SKAction.sequence([waitAction, scaleUp, scaleDown])))
         
         self.startLabel.text = ""
         self.startLabel.fontSize = 60
@@ -45,8 +52,8 @@ class TitleScene: SKScene{
         self.startLabel.position = CGPoint(x:0, y:-300)
         self.addChild(self.startLabel)
         
-        //start back music
-        self.audio.playMusic("title2.mp3")
+        //start back music(自作)
+        self.audio.playMusic("title1.mp3")
         
         // start button
         self.startButton.name = "start"
@@ -56,23 +63,27 @@ class TitleScene: SKScene{
         self.addChild(self.startButton)
         let fadeinAction = SKAction.fadeIn(withDuration: 0.5)
         let fadeoutAction = SKAction.fadeOut(withDuration: 0.5)
-        let waitAction = SKAction.wait(forDuration: 1.0)
+        waitAction = SKAction.wait(forDuration: 1.0)
         self.startButton.run(SKAction.repeatForever(SKAction.sequence([fadeinAction,waitAction, fadeoutAction])))
         
         // fake button
-        self.fakeButton.name = "fake"
-        self.fakeButton.position = CGPoint(x: 90, y:140)
-        self.startButton.zPosition = 120
-        self.addChild(self.fakeButton)
+//        self.fakeButton.name = "fake"
+//        self.fakeButton.position = CGPoint(x: 90, y:140)
+//        self.startButton.zPosition = 120
+//        self.addChild(self.fakeButton)
         
-        //circle button
-        self.blueCircle.fillColor = .blue
-        self.blueCircle.strokeColor = .blue
-        self.addChild(self.blueCircle)
-        let biggerCircleAction = SKAction.scale(to: 5, duration: 1.0)
-        let smallCircleAction = SKAction.scale(to: 0, duration: 1.0)
-        let allAction = SKAction.sequence([ biggerCircleAction, smallCircleAction])
-        self.blueCircle.run((SKAction.repeatForever(allAction)))
+        // Start button
+//        self.myButton.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+//        self.myButton.backgroundColor = .blue
+//        self.myButton.layer.masksToBounds = true
+//        self.myButton.setTitle("Hello", for: UIControl.State.normal)
+//        self.myButton.setTitleColor(UIColor.white, for: UIControl.State.normal)
+//        self.myButton.setTitle("Hello", for: UIControl.State.highlighted)
+//        self.myButton.setTitleColor(UIColor.red, for: UIControl.State.highlighted)
+//        self.myButton.layer.cornerRadius = 20.0
+//        self.myButton.layer.position = CGPoint(x:self.view!.frame.size.width/2, y:200)
+//        self.myButton.addTarget(self, action: Selector(("onClickMyButton:")), for: .touchUpInside)
+//        self.view!.addSubview(self.myButton)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -107,5 +118,13 @@ class TitleScene: SKScene{
         let nextScene = GameOverScene(fileNamed: "GameOverScene")
         nextScene?.scaleMode = .aspectFill
         self.view!.presentScene(nextScene)
+    }
+    
+    func onClickMyButton(sender : UIButton){
+        let rect = SKShapeNode(rectOf: CGSize(width: 50, height: 50))
+        rect.fillColor = UIColor.red
+        rect.position = CGPoint(x: self.frame.midX, y: self.frame.midY)
+        rect.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: 50, height: 50))
+        self.addChild(rect)
     }
 }
