@@ -121,9 +121,21 @@
 			children = (
 				5B393B8225AC71BA006D3F68 /* TitleScene.sks */,
 				5B7CB6A525ABE9EE00D5488D /* GameScene.sks */,
+				5BA0995425BD4DFA00295CA5 /* GameClearScene.sks */,
 				5B393B8425AC74A0006D3F68 /* GameOverScene.sks */,
 			);
 			path = sks;
+			sourceTree = "<group>";
+		};
+		5B7AC73F25BDA6BD006646AF /* scene */ = {
+			isa = PBXGroup;
+			children = (
+				5B7CB6D725ABEB5E00D5488D /* TitleScene.swift */,
+				5B7CB6E025AC2F6600D5488D /* GameOverScene.swift */,
+				5BA0995925BD4E2700295CA5 /* GameClearScene.swift */,
+				5B7CB6A925ABE9EE00D5488D /* GameScene.swift */,
+			);
+			path = scene;
 			sourceTree = "<group>";
 		};
 		5B7CB69725ABE9EE00D5488D = {
@@ -152,17 +164,13 @@
 			children = (
 				5B50553225BD5F5700DAE680 /* sks */,
 				5B7CB6A325ABE9EE00D5488D /* AppDelegate.swift */,
-				5B7CB6A925ABE9EE00D5488D /* GameScene.swift */,
-				5B7CB6D725ABEB5E00D5488D /* TitleScene.swift */,
+				5B7AC73F25BDA6BD006646AF /* scene */,
 				5BB117F925AD47420015B5FD /* Support */,
-				5B7CB6E025AC2F6600D5488D /* GameOverScene.swift */,
 				5B7CB6AB25ABE9EE00D5488D /* GameViewController.swift */,
 				5B7CB6AD25ABE9EE00D5488D /* Main.storyboard */,
 				5B7CB6B025ABE9F000D5488D /* Assets.xcassets */,
 				5B7CB6B225ABE9F000D5488D /* LaunchScreen.storyboard */,
 				5B7CB6B525ABE9F000D5488D /* Info.plist */,
-				5BA0995425BD4DFA00295CA5 /* GameClearScene.sks */,
-				5BA0995925BD4E2700295CA5 /* GameClearScene.swift */,
 			);
 			path = BlackWhisper;
 			sourceTree = "<group>";
