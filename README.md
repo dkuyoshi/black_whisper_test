@@ -1,3 +1,5 @@
 くそげ
 
-spritekit 基本詰め合わせた
+spritekit 
+
+基本的なことを詰め合わせた
